@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import "bootswatch/dist/materia/bootstrap.min.css";
+import './App.css'
+import NavbarCom from './components/NavbarCom';
+import Slider from './components/Slider'
+import OffersProduct from './components/OffersProducts'
+import ProductsContextProvider from './Global/ProductsContext'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <NavbarCom/>
+     <Slider/>
+     <ProductsContextProvider>
+     <OffersProduct/>
+     </ProductsContextProvider>
     </div>
   );
 }
