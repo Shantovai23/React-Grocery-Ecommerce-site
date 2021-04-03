@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ProductsContext } from "../Global/ProductsContext";
+import Slider2 from '../components/Slider'
+import {Badge} from 'react-bootstrap'
 const Responsive = () => {
   const { offersProducts } = useContext(ProductsContext);
   console.log(offersProducts)
@@ -47,8 +49,9 @@ const Responsive = () => {
   };
   return (
     <div>
+      <Slider2/>
       <h2 id="offersHeading" className="py-4">
-        Offers 10%
+        Grocery 5% off
       </h2>
       <div id='customContainer'>
       <Slider {...settings}>
@@ -59,8 +62,8 @@ const Responsive = () => {
               <div className="card-body">
                 <h5 className="card-title" style={{fontWeight:'600'}}>{val.name}</h5>
                 <h5 className="card-title" style={{fontWeight:'600'}}>${val.price}.00</h5>
-                <a href="#" className="btn btn-primary" style={{background:'#DA2267'}}>
-                  Details
+                <a href="#" className="btn btn-primary" style={{background:'#DA2267',textTransform:'capitalize'}}>
+                  Add to Cart
                 </a>
               </div>
             </div>

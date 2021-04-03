@@ -1,7 +1,4 @@
 import React,{createContext,useState} from 'react'
-
-
-
 import tomato from '../img/tomato.jpg'
 import onion from '../img/onion.jpg'
 import garlic from '../img/garlic.jpg'
@@ -13,9 +10,7 @@ import apple from '../img/apple.jpg'
 import orange from '../img/orange.jpg'
 import oil from '../img/oil.jpg'
 
-
 export const ProductsContext=createContext()
-
 
 const ProductsContextProvider=(props)=>{
    const [offersProducts]= useState([
