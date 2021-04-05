@@ -12,6 +12,7 @@ import Grocery from './components/Grocery'
 import Clothes from './components/Clothes'
 import Gadgets from './components/Gadgets'
 import PageNotFound from './components/PageNotFound'
+import SpecialOffer from './components/SpecialOffer'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/clothes' exact component={Clothes}/>
           <Route path='/gadgets' exact component={Gadgets}/>
           <Route  component={PageNotFound}/>
+          
         </Switch>
       </Router>
      </ProductsContextProvider>

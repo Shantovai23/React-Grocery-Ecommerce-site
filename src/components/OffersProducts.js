@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { ProductsContext } from "../Global/ProductsContext";
 import Slider2 from '../components/Slider'
 import {Badge} from 'react-bootstrap'
+import SpecialOffer from '../components/SpecialOffer'
 const Responsive = () => {
   const { offersProducts } = useContext(ProductsContext);
   console.log(offersProducts)
@@ -71,6 +72,7 @@ const Responsive = () => {
         ))}
       </Slider>
       </div>
+      <SpecialOffer/>
     </div>
   );
 };
