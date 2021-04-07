@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../img/logo.jpg";
 import { Button, Form, Nav, FormControl, Navbar } from "react-bootstrap";
 import Badge from '../material/Badge'
 import {Link} from 'react-router-dom'
+import {CartContext} from '../Global/CartContext'
 
 const NavbarCom = () => {
+  const data=useContext(CartContext)
+  
   return (
     <Navbar bg="light" expand="lg">
       <Navbar.Brand>
         <Link id="brand" to='/'>BazarShodai.com</Link>
         <img src={logo} alt="logo" style={{ width: "70px", height: "55px" }} />
       </Navbar.Brand>
-     <div className='mx-3'><Link to='cart'><Badge/></Link></div>
+     <div className='mx-3'><Link to='cart'><Badge test={data.quantity} /></Link></div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto mx-5">

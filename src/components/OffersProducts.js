@@ -4,11 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ProductsContext } from "../Global/ProductsContext";
 import Slider2 from '../components/Slider'
-import {Badge} from 'react-bootstrap'
 import SpecialOffer from '../components/SpecialOffer'
+import {CartContext} from '../Global/CartContext'
 const Responsive = () => {
   const { offersProducts } = useContext(ProductsContext);
-  console.log(offersProducts)
+  const {dispatch}=useContext(CartContext)
+  
+
 
   var settings = {
     dots: true,
@@ -56,14 +58,14 @@ const Responsive = () => {
       </h2>
       <div id='customContainer'>
       <Slider {...settings}>
-        {offersProducts.map((val) => (
-          <div id="customStyles" key={val.id}>
-            <div className="card" style={{ width: "18rem"}}>
-              <img className="card-img-top" src={val.img} alt="Card image cap" />
+        {offersProducts.map((product) => (
+          <div id="customStyles" key={product.id}>
+            <div  className="card" style={{ width: "18rem"}}>
+              <img className="card-img-top" src={product.img} alt="Card image cap" />
               <div className="card-body">
-                <h5 className="card-title" style={{fontWeight:'600'}}>{val.name}</h5>
-                <h5 className="card-title" style={{fontWeight:'600'}}>${val.price}.00</h5>
-                <a href="#" className="btn btn-primary" style={{background:'#DA2267',textTransform:'capitalize'}}>
+                <h5 className="card-title" style={{fontWeight:'600'}}>{product.name}</h5>
+                <h5 className="card-title" style={{fontWeight:'600'}}>${product.price}.00</h5>
+                <a  className="btn btn-primary" style={{background:'#DA2267',textTransform:'capitalize'}} onClick={()=>dispatch({type:'ADD_TO_CART',id:product.id,product:product})}>
                   Add to Cart
                 </a>
               </div>

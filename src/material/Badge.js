@@ -13,10 +13,10 @@ const StyledBadge = withStyles((theme) => ({
   },
 }))(Badge);
 
-export default function CustomizedBadges() {
+export default function CustomizedBadges(props) {
   return (
     <IconButton aria-label="cart">
-      <StyledBadge badgeContent={1} color="secondary">
+      <StyledBadge badgeContent={props.test} color="secondary">
         <ShoppingCartIcon />
       </StyledBadge>
     </IconButton>
