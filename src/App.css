@@ -161,6 +161,23 @@
 
 
 
+/*************GRocery**********/
+
+#grocery-flex{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#grocery-item{
+  margin: 10px 10px;
+}
+
+
+
 
 
 

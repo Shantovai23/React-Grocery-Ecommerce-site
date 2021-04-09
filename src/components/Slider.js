@@ -7,7 +7,7 @@ import img4 from "../img/testSlider.jpg";
 
 const Slider = () => {
   return (
-    <div id="slider">
+      <div id="slider">
       <Carousel>
         <Carousel.Item>
           <img className="d-block w-100" src={img3} alt="Second slide" />
