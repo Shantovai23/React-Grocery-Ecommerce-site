@@ -21,7 +21,7 @@ const SpecialOffer = () => {
           <h2 style={{ color: "#0d1137" }}>
             Offer Price: <span style={{ color: "#77c593" }}>$600</span>
           </h2>
-          <p className='pt-3 lead'>
+          <p className='pt-3 lead text-justify'>
             Made from Kiln-dried imported Beech wood and veneered engineered
             wood and veneered MDF. High quality environment friendly Italian
             Ultra Violet (UV) and Polyurethane (PU) Lacquer in antique finish

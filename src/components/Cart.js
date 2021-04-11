@@ -16,9 +16,10 @@ const Cart = () => {
       <div id="cartHeading">
         <h3>Your Shopping Cart</h3>
       </div>
+      <div id="cart-product-container">
       {shoppingCart.length > 0
         ? shoppingCart.map((cart) => (
-            <div id="cart-product-container">
+              <div style={{border:'1px solid #EEEEEE',padding:'10px',borderRadius:'7px'}} className='m-1 '>
               <div>
                 <img src={cart.img} alt="product-img" />
               </div>
@@ -59,9 +60,10 @@ const Cart = () => {
               >
                 <i className="fas fa-trash"></i>
               </span>
-            </div>
+              </div> 
           ))
         : <div><h4 className='py-5 text-center'>Currently Your Cart is Empty</h4></div>}
+        </div>
 
       {shoppingCart.length > 0 && (
         <div>

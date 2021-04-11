@@ -6,10 +6,7 @@ import { ProductsContext } from "../Global/ProductsContext";
 import Slider2 from "../components/Slider";
 import SpecialOffer from "../components/SpecialOffer";
 import { CartContext } from "../Global/CartContext";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { Slide, Zoom, Flip, Bounce,autoClose} from 'react-toastify';
-toast.configure();
+
 const Responsive = () => {
   const { offersProducts } = useContext(ProductsContext);
   const { dispatch } = useContext(CartContext);
@@ -88,12 +85,12 @@ const Responsive = () => {
                         product: product,
                       });
                      
-                        toast.success(`${product.name}  Added`, {
-                        position: toast.POSITION.TOP_RIGHT,
-                        transition:Zoom,
-                        autoClose:2000
+                      //   toast.success(`${product.name}  Added`, {
+                      //   position: toast.POSITION.TOP_RIGHT,
+                      //   transition:Zoom,
+                      //   autoClose:2000
                             
-                      });
+                      // });
                      
                     }}
                   >

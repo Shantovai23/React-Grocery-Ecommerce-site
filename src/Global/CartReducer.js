@@ -1,3 +1,8 @@
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Slide, Zoom, Flip, Bounce,autoClose} from 'react-toastify';
+toast.configure();
+
 export const CartReducer = (state, action) => {
     let { shoppingCart, totalPrice, quantity } = state
     let product;
@@ -9,12 +14,24 @@ export const CartReducer = (state, action) => {
       case "ADD_TO_CART":
         const check = shoppingCart.find((product) => product.id === action.id);
         if (check) {
+          toast.info(`This Product is Already Added`, {
+            position: toast.POSITION.TOP_RIGHT,
+            transition:Zoom,
+            autoClose:2000
+                
+          });
           return state;
         } else {
           product = action.product;
           product ["quantity"] = 1;
           updatedQty = quantity + 1;
           updatedPrice = totalPrice + product.price;
+          toast.success(`${product.name}  Added`, {
+            position: toast.POSITION.TOP_RIGHT,
+            transition:Zoom,
+            autoClose:2000
+                
+          });
           return {
             shoppingCart: [product, ...shoppingCart],
             totalPrice: updatedPrice,

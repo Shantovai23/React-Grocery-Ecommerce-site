@@ -32,6 +32,8 @@
   padding: 3px 20px ;
   color: #DA2267;
   text-decoration: none;
+ font-family:  Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 
@@ -44,6 +46,7 @@
 
 #slider{
   margin-top: 1.45px;
+  padding: 0 15px;
 }
 
 
@@ -108,9 +111,11 @@
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   border: 1px solid #EEEEEE;
-  padding: 20px;
+  padding: 10px;
+
+  
 }
 #cart-product-container img{
   width: 100px;
@@ -167,7 +172,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction:row;
-  align-items: center;
   justify-content: center;
   
 }
@@ -175,6 +179,8 @@
 #grocery-item{
   margin: 10px 10px;
 }
+
+
 
 
 

@@ -2,11 +2,6 @@ import React, { useContext } from 'react'
 
 import {ProductsContext} from '../Global/ProductsContext'
 import {CartContext} from '../Global/CartContext'
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { Slide, Zoom, Flip, Bounce,autoClose} from 'react-toastify';
-toast.configure();
-
 const Grocery=()=>{
     const {offersProducts}=useContext(ProductsContext)
     const {dispatch}=useContext(CartContext)
@@ -40,12 +35,12 @@ const Grocery=()=>{
                         product: product,
                       });
                      
-                        toast.success(`${product.name}  Added`, {
-                        position: toast.POSITION.TOP_RIGHT,
-                        transition:Zoom,
-                        autoClose:2000
+                      //   toast.success(`${product.name}  Added`, {
+                      //   position: toast.POSITION.TOP_RIGHT,
+                      //   transition:Zoom,
+                      //   autoClose:2000
                             
-                      });
+                      // });
                      
                     }}
                   >

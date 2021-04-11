@@ -9,7 +9,7 @@ const NavbarCom = () => {
   const data=useContext(CartContext)
   
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Navbar.Brand>
         <Link id="brand" to='/'>BazarShodai.com</Link>
         <img src={logo} alt="logo" style={{ width: "70px", height: "55px" }} />
