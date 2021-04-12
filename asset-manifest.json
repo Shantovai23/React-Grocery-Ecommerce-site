@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Grocery-Ecommerce-site/static/css/main.25b961b6.chunk.css",
-    "main.js": "/React-Grocery-Ecommerce-site/static/js/main.4d1e93af.chunk.js",
-    "main.js.map": "/React-Grocery-Ecommerce-site/static/js/main.4d1e93af.chunk.js.map",
+    "main.js": "/React-Grocery-Ecommerce-site/static/js/main.12498171.chunk.js",
+    "main.js.map": "/React-Grocery-Ecommerce-site/static/js/main.12498171.chunk.js.map",
     "runtime-main.js": "/React-Grocery-Ecommerce-site/static/js/runtime-main.6c92bd73.js",
     "runtime-main.js.map": "/React-Grocery-Ecommerce-site/static/js/runtime-main.6c92bd73.js.map",
     "static/css/2.64ea5cf6.chunk.css": "/React-Grocery-Ecommerce-site/static/css/2.64ea5cf6.chunk.css",
@@ -48,6 +48,6 @@
     "static/css/2.64ea5cf6.chunk.css",
     "static/js/2.8822ecc0.chunk.js",
     "static/css/main.25b961b6.chunk.css",
-    "static/js/main.4d1e93af.chunk.js"
+    "static/js/main.12498171.chunk.js"
   ]
 }
