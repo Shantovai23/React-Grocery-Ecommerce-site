@@ -19,10 +19,10 @@ const NavbarCom = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto mx-5">
           <Nav.Link  >
-          <Link id="items" to='grocery'> Grocery</Link>
+          <Link id="items" to='/grocery'> Grocery</Link>
           </Nav.Link>
           <Nav.Link  >
-          <Link id="items" to='clothes'> Clothes</Link>
+          <Link id="items" to='/clothes'> Clothes</Link>
           </Nav.Link>
         </Nav>
         
