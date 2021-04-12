@@ -22,7 +22,7 @@ function App() {
       <Router>
       <NavbarCom/>
         <Switch>
-          <Route path='/React-Grocery-Ecommerce-site' exact component={OffersProduct}/>
+          <Route path='/' exact component={OffersProduct}/>
           <Route path='/cart' exact component={Cart}/>
           <Route path='/grocery' exact component={Grocery}/>
           <Route path='/clothes' exact component={Clothes}/>
