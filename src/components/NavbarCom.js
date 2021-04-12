@@ -24,9 +24,6 @@ const NavbarCom = () => {
           <Nav.Link  >
           <Link id="items" to='clothes'> Clothes</Link>
           </Nav.Link>
-          <Nav.Link  >
-          <Link id="items" to='gadgets'> Gadgets</Link>
-          </Nav.Link>
         </Nav>
         
         {/* <Form inline>

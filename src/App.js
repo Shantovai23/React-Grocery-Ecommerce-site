@@ -13,6 +13,7 @@ import Gadgets from './components/Gadgets'
 import PageNotFound from './components/PageNotFound'
 import CartContextProvider from './Global/CartContext'
 
+
 function App() {
   return (
     <div>

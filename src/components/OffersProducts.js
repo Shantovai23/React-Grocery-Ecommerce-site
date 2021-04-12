@@ -6,7 +6,7 @@ import { ProductsContext } from "../Global/ProductsContext";
 import Slider2 from "../components/Slider";
 import SpecialOffer from "../components/SpecialOffer";
 import { CartContext } from "../Global/CartContext";
-
+import Footer from '../components/Footer'
 const Responsive = () => {
   const { offersProducts } = useContext(ProductsContext);
   const { dispatch } = useContext(CartContext);
@@ -103,6 +103,7 @@ const Responsive = () => {
         </Slider>
       </div>
       <SpecialOffer />
+      <Footer/>
     </div>
   );
 };
