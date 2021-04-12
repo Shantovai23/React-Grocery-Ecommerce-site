@@ -11,10 +11,10 @@ const NavbarCom = () => {
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Navbar.Brand>
-        <Link id="brand" to='/'>BazarShodai.com</Link>
+        <Link id="brand" to='/React-Grocery-Ecommerce-site'>BazarShodai.com</Link>
         <img src={logo} alt="logo" style={{ width: "70px", height: "55px" }} />
       </Navbar.Brand>
-     <div className='mx-3'><Link to='cart'><Badge test={data.quantity} /></Link></div>
+     <div className='mx-3'><Link to='/cart'><Badge test={data.quantity} /></Link></div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto mx-5">
